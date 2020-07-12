@@ -1,0 +1,13 @@
+  {
+    "name": "LigaMagic - Export to Arena",
+    "version": "1.0",
+    "description": "Nos posts da LigaMagic, não há um botão para exportar o deck mostrado para o MTGArena. Essa extensão soluciona isso.",
+    "manifest_version": 2,
+    "permissions": ["tabs", "*://*.ligamagic.com.br/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.ligamagic.com.br/*"],
+        "js": ["jquery-3.5.1.min.js", "export-to-arena.js"]
+      }
+    ]
+  }
